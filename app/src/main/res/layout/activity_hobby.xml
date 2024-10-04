@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#48D1CC"
+    android:fillViewport="true"
+    tools:context=".View.View.HobbyActivity"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@mipmap/ic_banner_foreground" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="Meu hobby favorito: Ler" />
+
+    <ImageView
+        android:id="@+id/imglivros"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/livros" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="A leitura é algo importante na vida do ser humano. Ler estimula a criatividade, trabalha a imaginação, exercita a memória, contribui com o crescimento do vocabulário e a melhora na escrita, além de outros benefícios." />
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <Button
+               android:id="@+id/btvoltar"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentBottom="true"
+               android:background="@drawable/botao1"
+               android:text="voltar"
+               tools:ignore="RtlCompat" />
+
+       </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

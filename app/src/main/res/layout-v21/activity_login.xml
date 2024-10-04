@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#48D1CC"
+    android:fillViewport="true"
+    tools:context=".View.View.LoginActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<Button
+    android:id="@+id/btcriarconta"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="260dp"
+    style="@style/Widget.AppCompat.Button.Borderless"
+    android:textColor="@color/white"
+    android:text="Criar conta" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/ic_banner_foreground" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/login"
+            android:gravity="center"
+            android:hint="Login"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtsenha"
+            android:inputType="numberPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:gravity="center"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+    <Button
+        android:id="@+id/btlogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/botao1"
+        android:text="Logar"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/botao" />
+
+    <Button
+        android:id="@+id/btsair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/botao1"
+        android:text="Sair"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/botao" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btredefinirsenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="Esqueceu a senha?\nClique aqui!"
+        android:layout_gravity="center"
+        android:textColor="@color/white" />
+</LinearLayout>
+</ScrollView>
